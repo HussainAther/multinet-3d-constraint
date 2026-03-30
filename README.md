@@ -68,6 +68,7 @@ This enables evaluation of **true capability transfer**, rather than re-learning
     "layout": "procedural"
   }
 }
+```
 
 multinet-3d-constraints/
 │
