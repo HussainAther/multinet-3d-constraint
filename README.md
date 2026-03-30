@@ -14,6 +14,7 @@ Many models perform well within a single modality (e.g., language or grid-based 
 
 ## Cross-Modal Task Alignment
 
+```
 flowchart LR
     A[Task Specification<br/>Shared Structure] --> B[GridWorld<br/>Symbolic / Discrete]
     A --> C[Language<br/>Instruction Only]
@@ -24,6 +25,7 @@ flowchart LR
     E --> D
 
     D --> F[Evaluation<br/>Success / Violations / Generalization]
+```
 
 ---
 
