@@ -12,6 +12,20 @@ Many models perform well within a single modality (e.g., language or grid-based 
 
 > Can an agent trained in one modality correctly infer and apply constraints when placed in a partially observable, interactive 3D environment?
 
+## Cross-Modal Task Alignment
+
+```mermaid
+flowchart LR
+    A[Task Specification\n(Shared Structure)] --> B[GridWorld\n(Symbolic / Discrete)]
+    A --> C[Language\n(Instruction Only)]
+    A --> D[3D Environment\n(Embodied + Occlusion)]
+
+    B --> E[Agent Learns Rule\n(e.g., fragile)]
+    C --> E
+    E --> D
+
+    D --> F[Evaluation\nSuccess / Violations / Generalization]
+
 ---
 
 ## Core Idea
