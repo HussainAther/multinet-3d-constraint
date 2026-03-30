@@ -14,17 +14,16 @@ Many models perform well within a single modality (e.g., language or grid-based 
 
 ## Cross-Modal Task Alignment
 
-```mermaid
 flowchart LR
-    A[Task Specification\n(Shared Structure)] --> B[GridWorld\n(Symbolic / Discrete)]
-    A --> C[Language\n(Instruction Only)]
-    A --> D[3D Environment\n(Embodied + Occlusion)]
+    A[Task Specification<br/>Shared Structure] --> B[GridWorld<br/>Symbolic / Discrete]
+    A --> C[Language<br/>Instruction Only]
+    A --> D[3D Environment<br/>Embodied + Occlusion]
 
-    B --> E[Agent Learns Rule\n(e.g., fragile)]
+    B --> E[Agent Learns Rule<br/>e.g., fragile]
     C --> E
     E --> D
 
-    D --> F[Evaluation\nSuccess / Violations / Generalization]
+    D --> F[Evaluation<br/>Success / Violations / Generalization]
 
 ---
 
